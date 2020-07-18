@@ -1,0 +1,93 @@
+{
+    "me": "我",
+    "you": "你",
+    "org": "的中大成就",
+    "name": "的名字",
+    "namenotsent": "你的名字不会被发送到服务器",
+    "viewonly": false,
+    "username": "",
+    "defaultHash": "DefaultValueForCrappyWeixin",
+    "defaultHashExplain": "//need this default value because sharing URL with hash will not work properly in weixin when opening a URL with no hash",
+    "achievements": [
+        {
+            "id": 1,
+            "title": "暴饮暴食",
+            "description": "体重和进入中大相比增加10千克",
+            "emoji": "🍔",
+            "color": "green",
+            "selected": false
+        },
+        {
+            "id": 2,
+            "title": "恭迎领导",
+            "description": "参观过大学展览厅",
+            "emoji": "😀",
+            "color": "blue",
+            "selected": false
+        },
+        {
+            "id": 3,
+            "title": "恭迎领导",
+            "description": "参观过大学展览厅",
+            "emoji": "😀",
+            "color": "blue",
+            "selected": false
+        },
+        {
+            "id": 4,
+            "title": "恭迎领导",
+            "description": "参观过大学展览厅",
+            "emoji": "😀",
+            "color": "blue",
+            "selected": false
+        },
+        {
+            "id": 5,
+            "title": "恭迎领导",
+            "description": "参观过大学展览厅",
+            "emoji": "😀",
+            "color": "blue",
+            "selected": false
+        },
+        {
+            "id": 6,
+            "title": "恭迎领导",
+            "description": "参观过大学展览厅",
+            "emoji": "😀",
+            "color": "blue",
+            "selected": false
+        },
+        {
+            "id": 7,
+            "title": "恭迎领导",
+            "description": "参观过大学展览厅",
+            "emoji": "😀",
+            "color": "blue",
+            "selected": false
+        },
+        {
+            "id": 8,
+            "title": "恭迎领导",
+            "description": "参观过大学展览厅",
+            "emoji": "😀",
+            "color": "blue",
+            "selected": false
+        },
+        {
+            "id": 9,
+            "title": "恭迎领导",
+            "description": "参观过hhhhhh大学展览厅",
+            "emoji": "😀",
+            "color": "blue",
+            "selected": false
+        },
+        {
+            "id": 10,
+            "title": "恭迎领导",
+            "description": "参观过大学展览厅",
+            "emoji": "😀",
+            "color": "blue",
+            "selected": false
+        }
+    ]
+}
