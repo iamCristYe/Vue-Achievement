@@ -2,10 +2,14 @@
     "me": "我",
     "you": "你",
     "org": "的中大成就",
-    "name": "的名字",
-    "namenotsent": "你的名字不会被发送到服务器",
-    "viewonly": false,
+    "name": "的名字(选填)",
+    "namenotsent": "信息仅用于分享",
+
     "username": "",
+
+    "shareImgSrc": "",
+
+    "pageStatus": "edit",
     "achievements": [
         {
             "id": 1,
@@ -25,65 +29,65 @@
         },
         {
             "id": 3,
-            "title": "恭迎领导",
-            "description": "参观过大学展览厅",
-            "emoji": "😀",
-            "color": "blue",
+            "title": "提前就业",
+            "description": "成为公众号写手",
+            "emoji": "✍️",
+            "color": "purple",
             "selected": false
         },
         {
             "id": 4,
-            "title": "恭迎领导",
-            "description": "参观过大学展览厅",
-            "emoji": "😀",
-            "color": "blue",
+            "title": "不夜山城",
+            "description": "在中大看过日出",
+            "emoji": "🌄",
+            "color": "red",
             "selected": false
         },
         {
             "id": 5,
-            "title": "恭迎领导",
-            "description": "参观过大学展览厅",
-            "emoji": "😀",
+            "title": "叛逃",
+            "description": "入学后换过书院",
+            "emoji": "🏃",
             "color": "blue",
             "selected": false
         },
         {
             "id": 6,
-            "title": "恭迎领导",
-            "description": "参观过大学展览厅",
-            "emoji": "😀",
-            "color": "blue",
+            "title": "老司机",
+            "description": "在香港或海外交换时开过车",
+            "emoji": "🏎️",
+            "color": "cyan",
             "selected": false
         },
         {
             "id": 7,
-            "title": "恭迎领导",
-            "description": "参观过大学展览厅",
-            "emoji": "😀",
-            "color": "blue",
+            "title": "尊重校训",
+            "description": "没有学过会计",
+            "emoji": "💵",
+            "color": "green",
             "selected": false
         },
         {
             "id": 8,
-            "title": "恭迎领导",
-            "description": "参观过大学展览厅",
-            "emoji": "😀",
-            "color": "blue",
+            "title": "正名",
+            "description": "（尝试）纠正过崇基书院这一错误说法",
+            "emoji": "🏫",
+            "color": "red",
             "selected": false
         },
         {
             "id": 9,
-            "title": "恭迎领导",
-            "description": "参观过hhhhhh大学展览厅",
-            "emoji": "😀",
-            "color": "blue",
+            "title": "兄弟之争",
+            "description": "谭仔和三哥都吃过",
+            "emoji": "👬",
+            "color": "yellow",
             "selected": false
         },
         {
             "id": 10,
-            "title": "恭迎领导",
-            "description": "参观过大学展览厅",
-            "emoji": "😀",
+            "title": "踏足飞地",
+            "description": "在西九龙站坐过车",
+            "emoji": "🚄",
             "color": "blue",
             "selected": false
         }
