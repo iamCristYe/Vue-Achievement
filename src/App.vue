@@ -12,6 +12,10 @@
         <vue-title :title="username === '' ? me + org : username + org"></vue-title>
         <v-spacer></v-spacer>
       </v-app-bar>
+      <!-- for cache -->
+      <v-row align="center" justify="center">
+        <v-img src="../public/QRcode.svg" max-width="0"></v-img>
+      </v-row>
       <v-main v-if="pageStatus!='ImgSharePage'">
         <v-container class="fill-height" fluid>
           <v-col v-for="achievement in achievements" :key="achievement.id" cols="12">
@@ -117,11 +121,6 @@ export default {
         }
       });
     }
-
-    //cache QR svg
-    const http = new XMLHttpRequest();
-    http.open("GET", "../public/QRcode.svg");
-    http.send();
   },
   methods: {
     changeParam: function () {
