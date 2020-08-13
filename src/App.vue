@@ -77,7 +77,7 @@
           <v-row>
             <v-col cols="12">
               <v-row align="center" justify="center">
-                <img :src="shareImgSrc" style="max-width:50%"/>
+                <img :src="shareImgSrc" style="max-width:75%" />
               </v-row>
             </v-col>
           </v-row>
@@ -117,6 +117,11 @@ export default {
         }
       });
     }
+
+    //cache QR svg
+    const http = new XMLHttpRequest();
+    http.open("GET", "../public/QRcode.svg");
+    http.send();
   },
   methods: {
     changeParam: function () {
@@ -147,14 +152,17 @@ export default {
 
       setTimeout(() => {
         //load QR
-        toimg.toPng(node).then(function (dataUrl) {
-          //var img = document.getElementById("shareImg");
-          //console.log(this);
-          //console.log(thisapp);
-          thisapp.shareImgSrc = dataUrl;
-          thisapp.pageStatus = "ImgSharePage";
-          //document.body.appendChild(img);
-        });
+        toimg
+          .toPng(node, { backgroundColor: "white" })
+          .then(function (dataUrl) {
+            //var img = document.getElementById("shareImg");
+            //console.log(this);
+            //console.log(thisapp);
+            thisapp.shareImgSrc = dataUrl;
+            thisapp.pageStatus = "ImgSharePage";
+            window.scrollTo(0, 0);
+            //document.body.appendChild(img);
+          });
       }, 2000);
     },
     resetForm: function () {
@@ -163,6 +171,7 @@ export default {
       this.achievements.forEach((element) => {
         element.selected = false;
       });
+      this.$vuetify.goTo(0);
     },
   },
 };

@@ -13,9 +13,9 @@
     "achievements": [
         {
             "id": 1,
-            "title": "暴饮暴食",
-            "description": "体重和进入中大相比增加10千克",
-            "emoji": "🍔",
+            "title": "初来乍到",
+            "description": "玩过Ocamp",
+            "emoji": "🏕️",
             "color": "green",
             "selected": false
         },
@@ -89,6 +89,14 @@
             "description": "在西九龙站坐过车",
             "emoji": "🚄",
             "color": "blue",
+            "selected": false
+        },
+        {
+            "id": 11,
+            "title": "暴饮暴食",
+            "description": "体重和进入中大相比增加10千克",
+            "emoji": "🍔",
+            "color": "green",
             "selected": false
         }
     ]
