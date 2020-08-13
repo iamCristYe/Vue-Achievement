@@ -4,11 +4,8 @@
     "org": "的中大成就",
     "name": "的名字(选填)",
     "namenotsent": "信息仅用于分享",
-
     "username": "",
-
     "shareImgSrc": "",
-
     "pageStatus": "edit",
     "achievements": [
         {
@@ -32,7 +29,7 @@
             "title": "提前就业",
             "description": "成为公众号写手",
             "emoji": "✍️",
-            "color": "purple",
+            "color": "#9575CD",
             "selected": false
         },
         {
@@ -48,7 +45,7 @@
             "title": "叛逃",
             "description": "入学后换过书院",
             "emoji": "🏃",
-            "color": "blue",
+            "color": "#90CAF9",
             "selected": false
         },
         {
@@ -64,7 +61,7 @@
             "title": "尊重校训",
             "description": "没有学过会计",
             "emoji": "💵",
-            "color": "green",
+            "color": "#80CBC4",
             "selected": false
         },
         {
@@ -72,7 +69,7 @@
             "title": "正名",
             "description": "（尝试）纠正过崇基书院这一错误说法",
             "emoji": "🏫",
-            "color": "red",
+            "color": "#F06292",
             "selected": false
         },
         {
@@ -88,7 +85,7 @@
             "title": "踏足飞地",
             "description": "在西九龙站坐过车",
             "emoji": "🚄",
-            "color": "blue",
+            "color": "#B0BEC5",
             "selected": false
         },
         {
@@ -97,6 +94,62 @@
             "description": "体重和进入中大相比增加10千克",
             "emoji": "🍔",
             "color": "green",
+            "selected": false
+        },
+        {
+            "id": 12,
+            "title": "后继无人",
+            "description": "没有直系",
+            "emoji": "😢",
+            "color": "#BCAAA4",
+            "selected": false
+        },
+        {
+            "id": 13,
+            "title": "走为上计",
+            "description": "曾经从沙田/大埔步行回中大",
+            "emoji": "🚶",
+            "color": "#FFAB91",
+            "selected": false
+        },
+        {
+            "id": 14,
+            "title": "为人民服务",
+            "description": "参与过MUA选举",
+            "emoji": "💁",
+            "color": "#D4E157",
+            "selected": false
+        },
+        {
+            "id": 15,
+            "title": "云游八方",
+            "description": "八大每一间都去过",
+            "emoji": "🎓",
+            "color": "#4FC3F7",
+            "selected": false
+        },
+        {
+            "id": 16,
+            "title": "视野开阔",
+            "description": "在大图楼顶俯瞰过百万大道",
+            "emoji": "🛣️",
+            "color": "#81C784",
+            "selected": false
+        },
+        {
+            "id": 17,
+            "title": "谈笑风生",
+            "description": "曾经和校长交流过",
+            "emoji": "👴",
+            "color": "#FF6E40",
+            "selected": false
+        },
+        {
+            "id": 18,
+            "title": "一贫如洗",
+            "description": "没有获得过奖学金",
+            "emoji": "😩",
+            "color": "#B2FF59",
             "selected": false
         }
     ]
