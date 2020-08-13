@@ -37,7 +37,7 @@
           ></v-text-field>
         </v-col>
         <div>
-          <v-btn v-if="!viewonly" rounded color="primary" dark @click="changeAnchor">确定</v-btn>
+          <v-btn v-if="!viewonly" rounded color="primary" dark @click="changeParam">确定</v-btn>
         </div>
         <div>
           <v-btn v-if="viewonly" rounded color="primary" dark @click="resetForm">制作我的</v-btn>
@@ -57,36 +57,31 @@ export default {
   data: () => json,
 
   computed: {
-    clickable: function() {
+    clickable: function () {
       return this.viewonly ? "null" : "click";
-    }
+    },
   },
-  created: function() {
-    let nameSelectedArr = window.location.hash.substr(1).split(",");
-    //console.log(nameSelectedArr)
+  created: function () {
+    let url = new URL(window.location);
 
-    //three cases for hash:
-    //no hash -> add hash
-    //default hash -> do nothing
-    //hash with username -> load username and change to viewonly
-    if (nameSelectedArr[0] === "") {
-      window.location = window.location + "#" + this.defaultHash;
-    } else if (nameSelectedArr[0] !== this.defaultHash) {
-      this.username = decodeURIComponent(nameSelectedArr[0]);
+    //need this for sharing on weixin
+    if (url.searchParams.get("weixin") != "crappy") {
+      window.location = window.location + "?weixin=crappy";
+    } else if (window.location.href.indexOf("name=") != -1) {
+      this.username = url.searchParams.get("name");
       this.viewonly = true;
+      this.achievements.forEach((element) => {
+        let selectedArray = url.searchParams.get("selected");
+        if (selectedArray.indexOf("" + element.id) != -1) {
+          element.selected = true;
+        }
+      });
     }
-    this.achievements.forEach(element => {
-      //console.log(nameSelectedArr, element.id);
-      if (nameSelectedArr.indexOf("" + element.id) > 0) {
-        //not in name
-        element.selected = true;
-      }
-    });
   },
   methods: {
-    changeAnchor: function() {
+    changeParam: function () {
       let selectedArr = [];
-      this.achievements.forEach(element => {
+      this.achievements.forEach((element) => {
         if (element.selected) {
           selectedArr.push(element.id);
         }
@@ -95,23 +90,30 @@ export default {
         this.username = this.me;
       }
       this.viewonly = true;
-      window.document.title = this.username + this.org;
-      window.location.hash = "#" + this.username + "," + selectedArr;
+      let newTitle = this.username + this.org;
+      let newURL =
+        window.location.href.split("?")[0] +
+        "?weixin=crappy&name=" +
+        this.username +
+        "&selected=" +
+        selectedArr;
+      history.pushState({}, newTitle, newURL);
+      //window.location.hash = "#" + this.username + "," + selectedArr;
 
       let node = document.getElementById("app");
-      toimg.toPng(node).then(function(dataUrl) {
+      toimg.toPng(node).then(function (dataUrl) {
         var img = new Image();
         img.src = dataUrl;
         document.body.appendChild(img);
       });
     },
-    resetForm: function() {
+    resetForm: function () {
       this.username = "";
       this.viewonly = false;
-      this.achievements.forEach(element => {
+      this.achievements.forEach((element) => {
         element.selected = false;
       });
-    }
-  }
+    },
+  },
 };
 </script>
