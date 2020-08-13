@@ -1,4 +1,4 @@
-# cuam
+# vue-achievement
 
 ## Project setup
 ```
