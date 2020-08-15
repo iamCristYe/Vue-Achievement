@@ -1,12 +1,16 @@
 {
-    "me": "我",
-    "you": "你",
-    "org": "的中大成就",
-    "name": "的名字(选填)",
-    "namenotsent": "信息仅用于分享",
     "username": "",
     "shareImgSrc": "",
     "pageStatus": "edit",
+    "me": "我",
+    "title": "我的中大成就",
+    "askname": "你的名字(选填)",
+    "namenotsent": "信息不会被收集",
+    "generateSharePage": "生成分享页面",
+    "generatingImage": "生成图片中",
+    "produceMine": "制作我的中大成就",
+    "sharePageInfo1": "请长按下图分享，非安卓微信用户也可直接分享本页面",
+    "sharePageInfo2": "作者正在寻找base香港的前端职位，有兴趣可以来<a href='https://github.com/iamCristYe/Vue-Achievement'>项目Github</a>联系我😊",
     "achievements": [
         {
             "id": 1,
@@ -150,6 +154,126 @@
             "description": "没有获得过奖学金",
             "emoji": "😩",
             "color": "#B2FF59",
+            "selected": false
+        },
+        {
+            "id": 19,
+            "title": "孤独的美食家",
+            "description": "独自一个人尝过九间书院餐厅",
+            "emoji": "🍴",
+            "color": "#C5CAE9",
+            "selected": false
+        },
+        {
+            "id": 20,
+            "title": "虔诚信徒",
+            "description": "频繁拜访清真can/素can",
+            "emoji": "🙏",
+            "color": "#B3E5FC",
+            "selected": false
+        },
+        {
+            "id": 21,
+            "title": "终成眷属",
+            "description": "和在中大认识的Ta结婚",
+            "emoji": "👰",
+            "color": "#E6EE9C",
+            "selected": false
+        },
+        {
+            "id": 22,
+            "title": "一事无成",
+            "description": "毕业前没有实习过",
+            "emoji": "😶",
+            "color": "#FFF59D",
+            "selected": false
+        },
+        {
+            "id": 23,
+            "title": "越野能手",
+            "description": "曾走过麦理浩径",
+            "emoji": "🥾",
+            "color": "#D7CCC8",
+            "selected": false
+        },
+        {
+            "id": 24,
+            "title": "硝烟弥漫",
+            "description": "去年在校园里问过催泪弹的味道",
+            "emoji": "⚔️",
+            "color": "#90A4AE",
+            "selected": false
+        },
+        {
+            "id": 25,
+            "title": "传教士",
+            "description": "去过神学楼",
+            "emoji": "⛪",
+            "color": "#26A69A",
+            "selected": false
+        },
+        {
+            "id": 26,
+            "title": "孤岛求生",
+            "description": "在香港的离岛玩过",
+            "emoji": "🏝️",
+            "color": "#CE93D8",
+            "selected": false
+        },
+        {
+            "id": 27,
+            "title": "骄傲",
+            "description": "参加过同志游行",
+            "emoji": "🏳️‍🌈",
+            "color": "#424242",
+            "selected": false
+        },
+        {
+            "id": 28,
+            "title": "无人问津",
+            "description": "Email学校问题没有回复",
+            "emoji": "😑",
+            "color": "#D7CCC8",
+            "selected": false
+        },
+        {
+            "id": 29,
+            "title": "爱心人士",
+            "description": "喂过猫猫",
+            "emoji": "🐈",
+            "color": "#FFCC80",
+            "selected": false
+        },
+        {
+            "id": 30,
+            "title": "大步向前",
+            "description": "某学年大部行分数超过120成为绿行者",
+            "emoji": "🚶‍♀️",
+            "color": "#81C784",
+            "selected": false
+        },
+        {
+            "id": 31,
+            "title": "身临其境",
+            "description": "在香港看过演唱会",
+            "emoji": "🎫",
+            "color": "#7C4DFF",
+            "selected": false
+        },
+        {
+            "id": 32,
+            "title": "性感荷官",
+            "description": "进过澳门赌场",
+            "emoji": "🎰",
+            "color": "#FF4081",
+            "selected": false
+        },
+        {
+            "id": 33,
+            "title": "寄人篱下",
+            "description": "长期窝蛇",
+            "emoji": "🐍",
+            "color": "#82B1FF",
             "selected": false
         }
     ]

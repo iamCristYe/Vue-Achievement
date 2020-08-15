@@ -1,15 +1,11 @@
 <template>
   <v-app>
-    <v-overlay v-if="pageStatus=='ImgSharePageProcessing'">生成图片中</v-overlay>
+    <v-overlay v-if="pageStatus=='ImgSharePageProcessing'">{{generatingImage}}</v-overlay>
     <v-flex id="forShare">
       <v-app-bar app color="#DDA300" dark>
         <v-spacer></v-spacer>
-        <v-toolbar-title>
-          {{
-          username === "" ? me + org : username + org
-          }}
-        </v-toolbar-title>
-        <vue-title :title="username === '' ? me + org : username + org"></vue-title>
+        <v-toolbar-title>{{username === "" ? title : title.replace(me,username)}}</v-toolbar-title>
+        <vue-title :title="username === '' ? title : title.replace(me,username)"></vue-title>
         <v-spacer></v-spacer>
       </v-app-bar>
       <!-- for cache -->
@@ -41,7 +37,7 @@
                 <v-text-field
                   v-if="pageStatus=='edit'"
                   v-model.trim="username"
-                  :label="you+name"
+                  :label="askname"
                   :placeholder="namenotsent"
                   class="shrink"
                 ></v-text-field>
@@ -55,7 +51,7 @@
                   color="primary"
                   dark
                   @click="changeParam"
-                >确定</v-btn>
+                >{{generateSharePage}}</v-btn>
               </v-row>
               <v-row align="center" justify="center">
                 <v-btn
@@ -66,26 +62,29 @@
                   color="primary"
                   dark
                   @click="resetForm"
-                >制作我的</v-btn>
+                >{{produceMine}}</v-btn>
               </v-row>
               <v-row v-if="pageStatus=='ImgSharePageProcessing'" align="center" justify="center">
-                <v-img src="../public/QRcode.svg" max-width="100px"></v-img>
+                <v-img src="../public/QRcode.svg" max-width="150px"></v-img>
               </v-row>
             </v-col>
           </v-row>
         </v-container>
       </v-main>
       <v-main v-if="pageStatus=='ImgSharePage'">
-        <v-card>
-          <v-card-text>你可以直接分享本页面，也可以长按下图分享。</v-card-text>
-          <v-row>
-            <v-col cols="12">
-              <v-row align="center" justify="center">
-                <img :src="shareImgSrc" style="max-width:75%" />
-              </v-row>
-            </v-col>
+        <v-container class="fill-height" fluid>
+          <v-alert type="success">
+            <span v-html="sharePageInfo1"></span>
+          </v-alert>
+
+          <v-row align="center" justify="center">
+            <img :src="shareImgSrc" style="max-height:300px" />
           </v-row>
-        </v-card>
+
+          <v-alert type="warning">
+            <span v-html="sharePageInfo2"></span>
+          </v-alert>
+        </v-container>
       </v-main>
     </v-flex>
   </v-app>
