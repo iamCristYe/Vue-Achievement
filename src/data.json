@@ -10,7 +10,7 @@
     "generatingImage": "生成图片中",
     "produceMine": "制作我的中大成就",
     "sharePageInfo1": "请长按下图分享，非安卓微信用户也可直接分享本页面",
-    "sharePageInfo2": "感谢<a style='color:white' href='https://mp.weixin.qq.com/s/xzmSa6GDE5D79Verw9xVOA'>北大男足的创意</a>与Ashley小梅的<a style='color:white' href='https://mp.weixin.qq.com/s/zxD6va-IMIRTKwnp3txOTw'>中大版本</a>。作者正在寻找base香港的前端职位，有兴趣可以来<a style='color:white' href='https://github.com/iamCristYe/Vue-Achievement'>项目Github</a>联系我😊",
+    "sharePageInfo2": "感谢<a style='color:white' href='https://mp.weixin.qq.com/s/xzmSa6GDE5D79Verw9xVOA'>北大中文男足的创意</a>与Ashley小梅的<a style='color:white' href='https://mp.weixin.qq.com/s/zxD6va-IMIRTKwnp3txOTw'>中大版本</a>。作者正在寻找base香港的前端职位，有兴趣可以来<a style='color:white' href='https://github.com/iamCristYe/Vue-Achievement'>项目Github</a>联系我😊",
     "achievements": [
         {
             "id": 1,
@@ -24,7 +24,7 @@
             "id": 2,
             "title": "恭迎领导",
             "description": "参观过大学展览厅",
-            "emoji": "😀",
+            "emoji": "🏛️",
             "color": "blue",
             "selected": false
         },
@@ -71,7 +71,7 @@
         {
             "id": 8,
             "title": "正名",
-            "description": "（尝试）纠正过崇基书院这一错误说法",
+            "description": "曾试过纠正崇基书院这一错误说法",
             "emoji": "🏫",
             "color": "#F06292",
             "selected": false
@@ -174,10 +174,10 @@
         },
         {
             "id": 21,
-            "title": "终成眷属",
-            "description": "和在中大认识的Ta结婚",
-            "emoji": "👰",
-            "color": "#E6EE9C",
+            "title": "硝烟弥漫",
+            "description": "去年在校园里闻过催泪弹的味道",
+            "emoji": "⚔️",
+            "color": "#EF9A9A",
             "selected": false
         },
         {
@@ -225,7 +225,7 @@
             "title": "骄傲",
             "description": "参加过同志游行",
             "emoji": "🏳️‍🌈",
-            "color": "#757575",
+            "color": "#90CAF9",
             "selected": false
         },
         {
@@ -294,10 +294,10 @@
         },
         {
             "id": 36,
-            "title": "硝烟弥漫",
-            "description": "去年在校园里闻过催泪弹的味道",
-            "emoji": "⚔️",
-            "color": "#90A4AE",
+            "title": "终成眷属",
+            "description": "和在中大认识的Ta订婚",
+            "emoji": "👰",
+            "color": "#E6EE9C",
             "selected": false
         }
     ]
