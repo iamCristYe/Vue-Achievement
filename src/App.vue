@@ -81,7 +81,7 @@
             <img :src="shareImgSrc" style="max-height:300px" />
           </v-row>
 
-          <v-alert type="warning">
+          <v-alert type="info">
             <span v-html="sharePageInfo2"></span>
           </v-alert>
         </v-container>
